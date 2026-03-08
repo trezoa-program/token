@@ -1,6 +1,6 @@
 [package]
 name = "tpl-token"
-version = "9.0.0"
+version = "4.0.0"
 description = "Trezoa Program Library Token"
 authors = { workspace = true}
 repository = { workspace = true}

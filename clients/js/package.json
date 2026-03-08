@@ -1,6 +1,6 @@
 {
     "name": "@trezoa-program/token",
-    "version": "0.12.0",
+    "version": "4.0.0",
     "description": "JavaScript client for the Token program",
     "sideEffects": false,
     "module": "./dist/src/index.mjs",
