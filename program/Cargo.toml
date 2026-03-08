@@ -1,0 +1,60 @@
+[package]
+name = "tpl-token"
+version = "9.0.0"
+description = "Trezoa Program Library Token"
+authors = { workspace = true}
+repository = { workspace = true}
+license = { workspace = true}
+edition = { workspace = true}
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+arrayref = "0.3.9"
+bytemuck = "1.20.0"
+num-derive = "0.4"
+num-traits = { workspace = true }
+num_enum = "0.7.3"
+trezoa-account-info = "3.0.0"
+trezoa-cpi = "3.0.0"
+trezoa-instruction = { workspace = true }
+trezoa-msg = "3.0.0"
+trezoa-program-entrypoint = "3.0.0"
+trezoa-program-error = { workspace = true }
+trezoa-program-memory = "3.0.0"
+trezoa-program-option = { workspace = true }
+trezoa-program-pack = { workspace = true }
+trezoa-pubkey = { workspace = true, features = ["bytemuck"] }
+trezoa-rent = "3.0.0"
+trezoa-sdk-ids = "3.0.0"
+trezoa-sysvar = { version = "3.0.0", features = ["bincode"] }
+tpl-token-interface = { version = "2.0" }
+thiserror = "2.0"
+
+[dev-dependencies]
+lazy_static = "1.5.0"
+mollusk-svm = { workspace = true }
+mollusk-svm-fuzz-fixture = { workspace = true }
+proptest = "1.5"
+serial_test = "3.2.0"
+trezoa-account = "3.0.0"
+trezoa-account-info = "3.0.0"
+trezoa-clock = "3.0.0"
+trezoa-native-token = "3.0.0"
+trezoa-rent = { version = "3.0.0", features = ["sysvar"] }
+trezoa-system-interface = { version = "2.0", features=["bincode"] }
+strum = "0.24"
+strum_macros = "0.24"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[lints]
+workspace = true
+
+[package.metadata.trezoa]
+program-id = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"

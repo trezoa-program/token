@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "devDependencies": {
+        "@codoma/renderers-js": "^2.0.2",
+        "@trezoa/prettier-config-trezoa": "0.0.6",
+        "codoma": "^1.5.0"
+    },
+    "engines": {
+        "node": ">=v20.0.0"
+    },
+    "packageManager": "pnpm@10.15.1",
+    "prettier": "@trezoa/prettier-config-trezoa"
+}

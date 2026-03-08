@@ -1,0 +1,79 @@
+mod setup;
+
+use {
+    pinocchio_token_interface::state::mint::Mint,
+    setup::TOKEN_PROGRAM_ID,
+    trezoa_keypair::Keypair,
+    trezoa_program_option::COption,
+    trezoa_program_pack::Pack,
+    trezoa_program_test::{tokio, ProgramTest},
+    trezoa_pubkey::Pubkey,
+    trezoa_signer::Signer,
+    trezoa_system_interface::instruction::create_account,
+    trezoa_transaction::Transaction,
+    std::mem::size_of,
+};
+
+#[tokio::test]
+async fn initialize_mint() {
+    let context = ProgramTest::new("pinocchio_token_program", TOKEN_PROGRAM_ID, None)
+        .start_with_context()
+        .await;
+
+    // Given a mint authority, freeze authority and an account keypair.
+
+    let mint_authority = Pubkey::new_unique();
+    let freeze_authority = Pubkey::new_unique();
+    let account = Keypair::new();
+
+    let account_size = size_of::<Mint>();
+    let rent = context.banks_client.get_rent().await.unwrap();
+
+    let initialize_ix = tpl_token_interface::instruction::initialize_mint(
+        &tpl_token_interface::ID,
+        &account.pubkey(),
+        &mint_authority,
+        Some(&freeze_authority),
+        0,
+    )
+    .unwrap();
+
+    // When a new mint account is created and initialized.
+
+    let instructions = vec![
+        create_account(
+            &context.payer.pubkey(),
+            &account.pubkey(),
+            rent.minimum_balance(account_size),
+            account_size as u64,
+            &TOKEN_PROGRAM_ID,
+        ),
+        initialize_ix,
+    ];
+
+    let tx = Transaction::new_signed_with_payer(
+        &instructions,
+        Some(&context.payer.pubkey()),
+        &[&context.payer, &account],
+        context.last_blockhash,
+    );
+    context.banks_client.process_transaction(tx).await.unwrap();
+
+    // Then an account has the correct data.
+
+    let account = context
+        .banks_client
+        .get_account(account.pubkey())
+        .await
+        .unwrap();
+
+    assert!(account.is_some());
+
+    let account = account.unwrap();
+    let mint = tpl_token_interface::state::Mint::unpack(&account.data).unwrap();
+
+    assert!(mint.is_initialized);
+    assert!(mint.mint_authority == COption::Some(mint_authority));
+    assert!(mint.freeze_authority == COption::Some(freeze_authority));
+    assert!(mint.decimals == 0)
+}

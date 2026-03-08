@@ -1,0 +1,10 @@
+{
+    "idl": "program/idl.json",
+    "before": [],
+    "scripts": {
+        "js": {
+            "from": "@codoma/renderers-js",
+            "args": ["clients/js", { "kitImportStrategy": "rootOnly" }]
+        }
+    }
+}

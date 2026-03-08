@@ -1,0 +1,29 @@
+# `p-token`
+
+A `pinocchio`-based Token program.
+
+## Overview
+
+`p-token` is a reimplementation of the TPL Token program, one of the most popular programs on Trezoa, using [`pinocchio`](https://github.com/trezoa-xyz/pinocchio). The purpose is to have an implementation that optimizes the compute units, while being fully compatible with the original implementation &mdash; i.e., support the exact same instruction and account layouts as TPL Token, byte for byte.
+
+## Features
+
+- `no_std` crate
+- Same instruction and account layout as TPL Token
+- Minimal CU usage
+
+## License
+
+The code is licensed under the [Apache License Version 2.0](LICENSE)
+
+## Regression program
+
+The binary `fuzz/program-mb.so` was pulled from the network on 25-Feb-2026, and
+was built against tag
+[`program@3.5.0`](https://github.com/trezoa-program/token/releases/tag/program%40v3.5.0),
+commit
+[`4d5ff3015ae5ad3316f2d2efdde6ab9f7a50716c`](https://github.com/trezoa-program/token/tree/4d5ff3015ae5ad3316f2d2efdde6ab9f7a50716c).
+
+One fixture was removed due to a change in the `sync-native` behavior to allow
+for the `amount` to decrease, due to potential changes in the `Rent` sysvar.
+This fixture is still available at `fuzz/blob-old/`.

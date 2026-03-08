@@ -1,0 +1,441 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@codoma/renderers-js':
+        specifier: ^2.0.2
+        version: 2.0.2(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3)
+      '@trezoa/prettier-config-trezoa':
+        specifier: 0.0.6
+        version: 0.0.6(prettier@3.8.1)
+      codoma:
+        specifier: ^1.5.0
+        version: 1.5.0
+
+packages:
+
+  '@codoma/cli@1.4.4':
+    resolution: {integrity: sha512-0uLecW/RZC2c1wx3j/eiRAYvilvNY+2DoyEYu/hV0OfM1/uIgIyuy5U+wolV+LY4wLFYdApjYdy+5D32lngCHg==}
+    hasBin: true
+
+  '@codoma/errors@1.5.0':
+    resolution: {integrity: sha512-i4cS+S7JaZXhofQHFY3cwzt8rqxUVPNaeJND5VOyKUbtcOi933YXJXk52gDG4mc+CpGqHJijsJjfSpr1lJGxzg==}
+    hasBin: true
+
+  '@codoma/node-types@1.5.0':
+    resolution: {integrity: sha512-Ebz2vOUukmNaFXWdkni1ZihXkAIUnPYtqIMXYxKXOxjMP+TGz2q0lGtRo7sqw1pc2ksFBIkfBp5pZsl5p6gwXA==}
+
+  '@codoma/nodes@1.5.0':
+    resolution: {integrity: sha512-yg+xmorWiMNjS3n19CGIt/FZ/ZCuDIu+HEY45bq6gHu1MN3RtJZY+Q3v0ErnBPA60D8mNWkvkKoeSZXfzcAvfw==}
+
+  '@codoma/renderers-core@1.3.5':
+    resolution: {integrity: sha512-MuZLU+3LZPQb1HuZffwZl+v5JHQDe5LYHGhA1wTMNlwRedYIysSxBjogHNciNIHsKP3JjmqyYmLO5LCEp3hjaQ==}
+
+  '@codoma/renderers-js@2.0.2':
+    resolution: {integrity: sha512-5gEDCgfqqUnc/uTAphj06+tU6n2fVZH439ih7H1yAF8WM+ftHB7Ph0rMb63J7/d+HRRZhdEet0Cngs1CZI6GHA==}
+    engines: {node: '>=20.18.0'}
+
+  '@codoma/validators@1.5.0':
+    resolution: {integrity: sha512-p3ufDxnCH1jiuHGzcBv4/d+ctzUcKD2K3gX/W8169tC41o9DggjlEpNy1Z6YAAhVb3wHnmXVGA2qmp32rWSfWw==}
+
+  '@codoma/visitors-core@1.5.0':
+    resolution: {integrity: sha512-3PIAlBX0a06hIxzyPtQMfQcqWGFBgfbwysSwcXBbvHUYbemwhD6xwlBKJuqTwm9DyFj3faStp5fpvcp03Rjxtw==}
+
+  '@codoma/visitors@1.5.0':
+    resolution: {integrity: sha512-SwtQaleXxAaFz6uHygxki621q4nPUDQlnwEhsg+QKOjHpKWXjLYdJof+R8gUiTV/n7/IeNnjvxJTTNfUsvETPQ==}
+
+  '@trezoa/codecs-core@6.0.1':
+    resolution: {integrity: sha512-OnUQk94qfvfE0nVveZ638aNUL3tyRJoorUFiAG0ICTGUo3c6fkYb8vH23o/5O2qmuSmYND1sn+UCaldNMVkFpg==}
+    engines: {node: '>=20.18.0'}
+    peerDependencies:
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@trezoa/codecs-numbers@6.0.1':
+    resolution: {integrity: sha512-ZrI1NjUsf4I+Klue/2rlQbZLcGRom/G2E4VB/8x4IEHGOeFLQhXcxmnib8kdgomQRYOzF1BjVDmCYxvZr+6AWA==}
+    engines: {node: '>=20.18.0'}
+    peerDependencies:
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@trezoa/codecs-strings@6.0.1':
+    resolution: {integrity: sha512-OmMIfMFbbJVIxveBeATKCj9DsmZ8l4vJPnOLHUop0hLWRiYHTQ1qokMqfk/X8PCmUjXmbXnlp63BikGtdKN3/g==}
+    engines: {node: '>=20.18.0'}
+    peerDependencies:
+      fastestsmallesttextencoderdecoder: ^1.0.22
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      fastestsmallesttextencoderdecoder:
+        optional: true
+      typescript:
+        optional: true
+
+  '@trezoa/errors@6.0.1':
+    resolution: {integrity: sha512-sMe5GCsXto8F1KDeq9GbZR0+m841SqEYep3NAcYlC0lqF2RG4giaaPQHgrWI5DJR/L7yc8FzUIQfTxnaN7bwOQ==}
+    engines: {node: '>=20.18.0'}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@trezoa/prettier-config-trezoa@0.0.6':
+    resolution: {integrity: sha512-/s55hDoAyh5QyltQh/jjNK3AgACEq885+DnC6lYhrmYZiV6I0iHITWYnKd8d23KRKs/RBjlaQH54MiafeoI9hw==}
+    peerDependencies:
+      prettier: ^3.7.4
+
+  call-bind-apply-helpers@1.0.2:
+    resolution: {integrity: sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==}
+    engines: {node: '>= 0.4'}
+
+  call-bind@1.0.8:
+    resolution: {integrity: sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==}
+    engines: {node: '>= 0.4'}
+
+  call-bound@1.0.4:
+    resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
+    engines: {node: '>= 0.4'}
+
+  chalk@5.6.2:
+    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
+  codoma@1.5.0:
+    resolution: {integrity: sha512-hhfSzrOiDX3bV7QmJneEBsBk3ln4gIcMJs6P8BlEJ3EFI+P0QZaTT5W61o8Tq0/79hTZeyj0gP65HZ/LYJil+w==}
+    hasBin: true
+
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
+    engines: {node: '>=20'}
+
+  define-data-property@1.1.4:
+    resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
+    engines: {node: '>= 0.4'}
+
+  dunder-proto@1.0.1:
+    resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
+    engines: {node: '>= 0.4'}
+
+  es-define-property@1.0.1:
+    resolution: {integrity: sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==}
+    engines: {node: '>= 0.4'}
+
+  es-errors@1.3.0:
+    resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
+    engines: {node: '>= 0.4'}
+
+  es-object-atoms@1.1.1:
+    resolution: {integrity: sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==}
+    engines: {node: '>= 0.4'}
+
+  fastestsmallesttextencoderdecoder@1.0.22:
+    resolution: {integrity: sha512-Pb8d48e+oIuY4MaM64Cd7OW1gt4nxCHs7/ddPPZ/Ic3sg8yVGM7O9wDvZ7us6ScaUupzM+pfBolwtYhN1IxBIw==}
+
+  function-bind@1.1.2:
+    resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+
+  get-intrinsic@1.3.0:
+    resolution: {integrity: sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==}
+    engines: {node: '>= 0.4'}
+
+  get-proto@1.0.1:
+    resolution: {integrity: sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==}
+    engines: {node: '>= 0.4'}
+
+  gopd@1.2.0:
+    resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
+    engines: {node: '>= 0.4'}
+
+  has-property-descriptors@1.0.2:
+    resolution: {integrity: sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==}
+
+  has-symbols@1.1.0:
+    resolution: {integrity: sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==}
+    engines: {node: '>= 0.4'}
+
+  hasown@2.0.2:
+    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
+    engines: {node: '>= 0.4'}
+
+  isarray@2.0.5:
+    resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
+
+  json-stable-stringify@1.3.0:
+    resolution: {integrity: sha512-qtYiSSFlwot9XHtF9bD9c7rwKjr+RecWT//ZnPvSmEjpV5mmPOCN4j8UjY5hbjNkOwZ/jQv3J6R1/pL7RwgMsg==}
+    engines: {node: '>= 0.4'}
+
+  jsonify@0.0.1:
+    resolution: {integrity: sha512-2/Ki0GcmuqSrgFyelQq9M05y7PS0mEwuIzrf3f1fPqkVDVRvZrPZtVSMHxdgo8Aq0sxAOb/cr2aqqA3LeWHVPg==}
+
+  kleur@3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
+
+  math-intrinsics@1.1.0:
+    resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
+    engines: {node: '>= 0.4'}
+
+  object-keys@1.1.1:
+    resolution: {integrity: sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==}
+    engines: {node: '>= 0.4'}
+
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  prompts@2.4.2:
+    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
+    engines: {node: '>= 6'}
+
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  set-function-length@1.2.2:
+    resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
+    engines: {node: '>= 0.4'}
+
+  sisteransi@1.0.5:
+    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@codoma/cli@1.4.4':
+    dependencies:
+      '@codoma/nodes': 1.5.0
+      '@codoma/visitors': 1.5.0
+      '@codoma/visitors-core': 1.5.0
+      commander: 14.0.3
+      picocolors: 1.1.1
+      prompts: 2.4.2
+
+  '@codoma/errors@1.5.0':
+    dependencies:
+      '@codoma/node-types': 1.5.0
+      commander: 14.0.3
+      picocolors: 1.1.1
+
+  '@codoma/node-types@1.5.0': {}
+
+  '@codoma/nodes@1.5.0':
+    dependencies:
+      '@codoma/errors': 1.5.0
+      '@codoma/node-types': 1.5.0
+
+  '@codoma/renderers-core@1.3.5':
+    dependencies:
+      '@codoma/errors': 1.5.0
+      '@codoma/nodes': 1.5.0
+      '@codoma/visitors-core': 1.5.0
+
+  '@codoma/renderers-js@2.0.2(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3)':
+    dependencies:
+      '@codoma/errors': 1.5.0
+      '@codoma/nodes': 1.5.0
+      '@codoma/renderers-core': 1.3.5
+      '@codoma/visitors-core': 1.5.0
+      '@trezoa/codecs-strings': 6.0.1(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3)
+      prettier: 3.8.1
+      semver: 7.7.4
+    transitivePeerDependencies:
+      - fastestsmallesttextencoderdecoder
+      - typescript
+
+  '@codoma/validators@1.5.0':
+    dependencies:
+      '@codoma/errors': 1.5.0
+      '@codoma/nodes': 1.5.0
+      '@codoma/visitors-core': 1.5.0
+
+  '@codoma/visitors-core@1.5.0':
+    dependencies:
+      '@codoma/errors': 1.5.0
+      '@codoma/nodes': 1.5.0
+      json-stable-stringify: 1.3.0
+
+  '@codoma/visitors@1.5.0':
+    dependencies:
+      '@codoma/errors': 1.5.0
+      '@codoma/nodes': 1.5.0
+      '@codoma/visitors-core': 1.5.0
+
+  '@trezoa/codecs-core@6.0.1(typescript@5.9.3)':
+    dependencies:
+      '@trezoa/errors': 6.0.1(typescript@5.9.3)
+    optionalDependencies:
+      typescript: 5.9.3
+
+  '@trezoa/codecs-numbers@6.0.1(typescript@5.9.3)':
+    dependencies:
+      '@trezoa/codecs-core': 6.0.1(typescript@5.9.3)
+      '@trezoa/errors': 6.0.1(typescript@5.9.3)
+    optionalDependencies:
+      typescript: 5.9.3
+
+  '@trezoa/codecs-strings@6.0.1(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3)':
+    dependencies:
+      '@trezoa/codecs-core': 6.0.1(typescript@5.9.3)
+      '@trezoa/codecs-numbers': 6.0.1(typescript@5.9.3)
+      '@trezoa/errors': 6.0.1(typescript@5.9.3)
+    optionalDependencies:
+      fastestsmallesttextencoderdecoder: 1.0.22
+      typescript: 5.9.3
+
+  '@trezoa/errors@6.0.1(typescript@5.9.3)':
+    dependencies:
+      chalk: 5.6.2
+      commander: 14.0.3
+    optionalDependencies:
+      typescript: 5.9.3
+
+  '@trezoa/prettier-config-trezoa@0.0.6(prettier@3.8.1)':
+    dependencies:
+      prettier: 3.8.1
+
+  call-bind-apply-helpers@1.0.2:
+    dependencies:
+      es-errors: 1.3.0
+      function-bind: 1.1.2
+
+  call-bind@1.0.8:
+    dependencies:
+      call-bind-apply-helpers: 1.0.2
+      es-define-property: 1.0.1
+      get-intrinsic: 1.3.0
+      set-function-length: 1.2.2
+
+  call-bound@1.0.4:
+    dependencies:
+      call-bind-apply-helpers: 1.0.2
+      get-intrinsic: 1.3.0
+
+  chalk@5.6.2: {}
+
+  codoma@1.5.0:
+    dependencies:
+      '@codoma/cli': 1.4.4
+      '@codoma/errors': 1.5.0
+      '@codoma/nodes': 1.5.0
+      '@codoma/validators': 1.5.0
+      '@codoma/visitors': 1.5.0
+
+  commander@14.0.3: {}
+
+  define-data-property@1.1.4:
+    dependencies:
+      es-define-property: 1.0.1
+      es-errors: 1.3.0
+      gopd: 1.2.0
+
+  dunder-proto@1.0.1:
+    dependencies:
+      call-bind-apply-helpers: 1.0.2
+      es-errors: 1.3.0
+      gopd: 1.2.0
+
+  es-define-property@1.0.1: {}
+
+  es-errors@1.3.0: {}
+
+  es-object-atoms@1.1.1:
+    dependencies:
+      es-errors: 1.3.0
+
+  fastestsmallesttextencoderdecoder@1.0.22:
+    optional: true
+
+  function-bind@1.1.2: {}
+
+  get-intrinsic@1.3.0:
+    dependencies:
+      call-bind-apply-helpers: 1.0.2
+      es-define-property: 1.0.1
+      es-errors: 1.3.0
+      es-object-atoms: 1.1.1
+      function-bind: 1.1.2
+      get-proto: 1.0.1
+      gopd: 1.2.0
+      has-symbols: 1.1.0
+      hasown: 2.0.2
+      math-intrinsics: 1.1.0
+
+  get-proto@1.0.1:
+    dependencies:
+      dunder-proto: 1.0.1
+      es-object-atoms: 1.1.1
+
+  gopd@1.2.0: {}
+
+  has-property-descriptors@1.0.2:
+    dependencies:
+      es-define-property: 1.0.1
+
+  has-symbols@1.1.0: {}
+
+  hasown@2.0.2:
+    dependencies:
+      function-bind: 1.1.2
+
+  isarray@2.0.5: {}
+
+  json-stable-stringify@1.3.0:
+    dependencies:
+      call-bind: 1.0.8
+      call-bound: 1.0.4
+      isarray: 2.0.5
+      jsonify: 0.0.1
+      object-keys: 1.1.1
+
+  jsonify@0.0.1: {}
+
+  kleur@3.0.3: {}
+
+  math-intrinsics@1.1.0: {}
+
+  object-keys@1.1.1: {}
+
+  picocolors@1.1.1: {}
+
+  prettier@3.8.1: {}
+
+  prompts@2.4.2:
+    dependencies:
+      kleur: 3.0.3
+      sisteransi: 1.0.5
+
+  semver@7.7.4: {}
+
+  set-function-length@1.2.2:
+    dependencies:
+      define-data-property: 1.1.4
+      es-errors: 1.3.0
+      function-bind: 1.1.2
+      get-intrinsic: 1.3.0
+      gopd: 1.2.0
+      has-property-descriptors: 1.0.2
+
+  sisteransi@1.0.5: {}
+
+  typescript@5.9.3:
+    optional: true
